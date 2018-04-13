@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Quiz Game In JS</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/quiz-style.css">
+    </head>
+    <body>
+        <div id="container">
+          <div id="container-inner">
+           <div id="quiz-box">
+           <div id="content">
+           <div id="heading">QUIZ GAME..!!</div>
+           <hr>
+            <div id="question-outer">
+                <p id="question">QUESTION HERE!</p>
+            </div>
+            <hr>
+            <div class="row" id="choices">
+                <div class="col-sm-6 col-md-6 my-3">
+                    <button id="button1" class="btn btn-secondary choice general-btn" onclick="check(id)">CHOICE 1</button>
+                </div>
+                <div class="col-sm-6 col-md-6 my-3">
+                    <button id="button2" class="btn btn-secondary choice general-btn" onclick="check(id)">CHOICE 2</button>
+                </div>
+                <div class="col-sm-6 col-md-6 my-3">
+                    <button id="button3" class="btn btn-secondary choice general-btn" onclick="check(id)">CHOICE 3</button>
+                </div>
+                <div class="col-sm-6 col-md-6 my-3">
+                    <button id="button4" class="btn btn-secondary choice general-btn" onclick="check(id)">CHOICE 4</button>
+                </div>
+            </div>
+            <hr>
+            <div class="row my-4 mx-0">
+                <div class="col-sm-6">
+                    <button id="start-game" class="btn general-btn" onclick="start()">START GAME</button>
+                </div>
+                <div class="col-sm-6">
+                    <div id="timer">Time Remaining: <span id="counter">0</span></div>
+                </div>
+            </div>
+        </div>
+        <div id="game-over-box">
+            <img src="img/Game_Over.png" class="img-fluid">
+            <div id="game-over">
+                
+            </div>
+            <div id="game-over-msg">
+                
+            </div>
+            <button class="btn btn-warning btn-block my-5" onclick="location.reload()">Start Again !</button>
+        </div>
+        </div>
+        </div>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
